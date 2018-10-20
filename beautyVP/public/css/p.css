@@ -1,0 +1,31 @@
+
+
+
+
+#panel{
+	 color: #053035;
+	 text-align: center;
+	 padding: 70px;
+}
+
+
+
+#panel .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inf-panel img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 5px solid #053035;
+	padding: 15%;
+
+}
+
+#panel a{
+	color: white;
+
+}
