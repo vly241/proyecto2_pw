@@ -1,6 +1,6 @@
 <?php
 	
-	$mysqli = new mysqli('localhost', 'root', 'password', 'bdbeautyvp');
+	$mysqli = new mysqli('localhost', 'root', '', 'bdbeautyvp');
 	
 	if($mysqli->connect_error){
 		
