@@ -7,7 +7,7 @@
 	{
 		$valor = $_POST['campo'];
 		if(!empty($valor)){
-			$where = "WHERE nombre LIKE '%$valor'";
+			$where = "WHERE nombre LIKE '$valor%'";
 		}
 	}
 	$sql = "SELECT * FROM productos $where";
@@ -29,6 +29,11 @@
 		<link href="../public/css/bootstrap-theme.css" rel="stylesheet">
 	 <link rel="stylesheet" href="../public/css/pag_principal.css">
      <link rel="stylesheet" href="../public/css/styles.css">
+     
+      <!-- Incluir Jquery -->
+     <script src="../public/js/jquery.min.js"></script>
+	<!-- Incluir Bootstrap -->
+	<script src="../public/js/bootstrap.min.js"></script>
 </head>
 <body>
    
@@ -43,7 +48,7 @@
          
           <ul class="menu">
             <li class="menu__item"><a href="/" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Usuarios</a></li>
+            <li class="menu__item"><a href="../usuarios/usuario.php" class="menu__link">Usuarios</a></li>
             <li class="menu__item"><a href="" class="menu__link">vista usuario</a></li>
             <li class="menu__item"><a href="" class="menu__link">Facturas</a></li>
             <li class="menu__item"><a href="../carrito_compra.php" class="menu__link"><img src="../public/img/carrito.png" alt=""></a></li>
@@ -129,7 +134,7 @@
 			
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-						<a  class="btn btn-danger btn-ok">Delete</a>
+						<a class="btn btn-danger btn-ok">Delete</a>
 					</div>
 					
 				</div>
@@ -145,9 +150,9 @@
 		</script>	
 			
    
-    <!-- Incluir Jquery -->
-	<script src="../public/js/jquery.min.js"></script>
-	<!-- Incluir Bootstrap -->
-	<script src="../public/js/bootstrap.min.js"></script>
+   
+	
+	
+	
 </body>
 </html>

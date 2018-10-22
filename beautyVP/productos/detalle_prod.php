@@ -52,10 +52,14 @@ img{
       
    <center>
     <h1><?php echo $row['nombre'];?></h1><br>
-    <img src="../public/img/productos/<?php echo $row['imagen'];?>"><br>
-   
-     <span>precio:<?php echo $row['precio'];?></span><br>
-    <a class="btn btn-success" href="./carrito_compra.php?id=<?php  echo $row['id'];?>">añadir al carrito</a>
+    <img src="../public/img/productos/<?php echo $row['imagen'];?>"><br><br>
+    <h3>precio:</h3>
+     <span><?php echo $row['precio'];?></span><br><br>
+     <h3>descripcion:</h3>
+     <span><?php echo $row['descripcion'];?></span><br><br>
+     <h3>stock:</h3>
+     <span><?php echo $row['stock'];?></span><br><br>
+  
      <a href="../admin/pag_principal_admin.php" class="btn btn-success">Ir Atrás</a>
     </center>
   
