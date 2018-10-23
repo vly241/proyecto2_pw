@@ -28,12 +28,13 @@
 			<form class="form-horizontal" method="POST" action="update.php" autocomplete="off">
 			
 			<div class="form-group">
-					<label for="nombre" class="col-sm-2 control-label">usuario</label>
+					<label for="usuario" class="col-sm-2 control-label">usuario</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario" value="<?php echo $row['usuario']; ?>" required>
 					</div>
 				</div>
-			
+				<input type="hidden" id="id" name="id" value="<?php echo $row['id']; ?>" />
+				
 				<div class="form-group">
 					<label for="correo" class="col-sm-2 control-label">Email</label>
 					<div class="col-sm-10">
@@ -101,7 +102,7 @@
 				<div class="form-group">
 					<label for="clave" class="col-sm-2 control-label">clave</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="clave" name="clave" placeholder="clave"  required>
+						<input type="text" class="form-control" id="clave" name="clave" placeholder="clave"  value="<?php  echo $row['clave']; ?>" required>
 					</div>
 				</div>
 				
@@ -109,7 +110,7 @@
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<a href="../usuarios/" class="btn btn-default">Regresar</a>
+						<a href="./usuario.php" class="btn btn-default">Regresar</a>
 						<button type="submit" class="btn btn-primary">Guardar</button>
 					</div>
 				</div>

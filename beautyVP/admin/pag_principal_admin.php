@@ -49,10 +49,10 @@
           <ul class="menu">
             <li class="menu__item"><a href="/" class="menu__link select">Inicio</a></li>
             <li class="menu__item"><a href="../usuarios/usuario.php" class="menu__link">Usuarios</a></li>
-            <li class="menu__item"><a href="" class="menu__link">vista usuario</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Facturas</a></li>
-            <li class="menu__item"><a href="../carrito_compra.php" class="menu__link"><img src="../public/img/carrito.png" alt=""></a></li>
-        
+           
+            <li class="menu__item"><a href="../facturas/facturas.php" class="menu__link">Facturas</a></li>
+            <li class="menu__item"><h3>administrador</h3></li>
+         
             
           
            

@@ -2,6 +2,7 @@
 	
 	require '../conexion/conexion.php';
 
+    $id = $_POST['id'];
 	$usuario = $_POST['usuario'];
     $correo = $_POST['correo'];
     $nombre = $_POST['nombre'];
@@ -18,7 +19,7 @@
 	
 
 	
-	$sql = "UPDATE usuarios SET usuario='$usuario', correo='$correo', nombre='$nombre', apellido='$apellido', direccion='$direccion', localidad='$localidad' , numeroMovil='$numeroMovil' , tipo_usuario='$tipo_usuario'  , clave='$clave', sexo='$sexo'  WHERE id = '$id'";
+	$sql = "UPDATE  usuarios SET usuario ='$usuario' , correo='$correo', nombre='$nombre', apellido='$apellido', direccion='$direccion', localidad='$localidad', numeroMovil='$numeroMovil' , tipo_usuario='$tipo_usuario' ,clave='$clave' , sexo='$sexo'  WHERE id = '$id'";
 	$resultado = $mysqli->query($sql);
 	
 ?>
@@ -43,7 +44,7 @@
 				<h3>ERROR AL MODIFICAR</h3>
 				<?php } ?>
 				
-				<a href="../admin/pag_principal_admin.php" class="btn btn-primary">Regresar</a>
+				<a href="./usuario.php" class="btn btn-primary">Regresar</a>
 				
 				</div>
 			</div>
