@@ -7,6 +7,7 @@
 	$descripcion = $_POST['descripcion'];
 	$imagen = $_POST['imagen'];
     $precio = $_POST['precio'];
+    
 	
 	
 	

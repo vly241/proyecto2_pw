@@ -7,7 +7,7 @@
 	{
 		$valor = $_POST['campo'];
 		if(!empty($valor)){
-			$where = "WHERE nombre LIKE '$valor%'";
+			$where = "WHERE usuario LIKE '$valor%'";
 		}
 	}
 	$sql = "SELECT * FROM usuarios $where";
