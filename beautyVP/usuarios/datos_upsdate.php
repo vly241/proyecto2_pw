@@ -2,17 +2,23 @@
 	
 	require '../conexion/conexion.php';
 
-	$id = $_POST['id'];
-	$id_producto = $_POST['id_producto'];
-	$cantidad = $_POST['cantidad'];
-	$id_usuario = $_POST['id_usuario'];
-	$total = $_POST['total'];
-    $fecha = $_POST['fecha'];
-	
+    $id = $_POST['id'];
+	$usuario = $_POST['usuario'];
+    $correo = $_POST['correo'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $direccion = $_POST['direccion'];
+    $localidad = $_POST['localidad'];
+    $numeroMovil = $_POST['numeroMovil'];
+    $sexo = $_POST['sexo'];
+	$clave = $_POST['clave'];
+   
+
+        $clave = hash('sha512', $clave);
 	
 
 	
-	$sql = "UPDATE facturas SET fecha='$fecha', id_producto='$id_producto', cantidad='$cantidad', id_usuario='$id_usuario', total='$total' WHERE id = '$id'";
+	$sql = "UPDATE  usuarios SET usuario ='$usuario' , correo='$correo', nombre='$nombre', apellido='$apellido', direccion='$direccion', localidad='$localidad', numeroMovil='$numeroMovil'  ,clave='$clave' , sexo='$sexo'  WHERE id = '$id'";
 	$resultado = $mysqli->query($sql);
 	
 ?>
@@ -37,7 +43,7 @@
 				<h3>ERROR AL MODIFICAR</h3>
 				<?php } ?>
 				
-				<a href="./facturas.php" class="btn btn-primary">Regresar</a>
+				<a href="./pag_principal_user.php" class="btn btn-primary">Regresar</a>
 				
 				</div>
 			</div>

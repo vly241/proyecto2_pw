@@ -45,14 +45,20 @@
 				<div class="form-group">
 					<label for="cantidad" class="col-sm-2 control-label">cantidad</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad" value="<?php echo $row['precio']; ?>" >
+						<input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad" value="<?php echo $row['cantidad']; ?>" >
 					</div>
 				</div>
 				
 				<div class="form-group">
 					<label for="id_usuario" class="col-sm-2 control-label">id_usuario</label>
 					<div class="col-sm-10">
-						<input type="text" class="fid_usuario" id="id_usuario" name="id_usuario" placeholder="id_usuario" value="<?php echo $row['descripcion']; ?>" >
+						<input type="text" class="fid_usuario" id="id_usuario" name="id_usuario" placeholder="id_usuario" value="<?php echo $row['id_usuario']; ?>" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="total" class="col-sm-2 control-label">total</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="total" name="total" placeholder="total" value="<?php echo $row['total']; ?>" >
 					</div>
 				</div>
 				
@@ -63,7 +69,7 @@
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<a href="../admin/pag_principal_admin.php" class="btn btn-default">Regresar</a>
+						<a href="./facturas.php" class="btn btn-default">Regresar</a>
 						<button type="submit" class="btn btn-primary">Guardar</button>
 					</div>
 				</div>

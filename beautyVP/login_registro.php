@@ -12,7 +12,7 @@
         $usuario = $_POST['usuario'];
         $clave = $_POST['clave'];
         $clave2 = $_POST['clave2'];
-        
+       
         $clave = hash('sha512', $clave);
         $clave2 = hash('sha512', $clave2);
         
@@ -45,13 +45,13 @@
         }
         
         if ($error == ''){
-            $statement = $conexion->prepare('INSERT INTO usuarios (id, correo, usuario, clave, tipo_usuario) VALUES (null, :correo, :usuario, :clave, :tu)');
+            $statement = $conexion->prepare('INSERT INTO usuarios (id, correo, usuario, clave,tipo_usuario) VALUES (null, :correo, :usuario, :clave, :tp)');
             $statement->execute(array(
                 
                 ':correo' => $correo,
                 ':usuario' => $usuario,
                 ':clave' => $clave,
-                ':tu'=> 'usuario'
+                ':tp'=>'usuario'
             ));
             
             $error .= '<i style="color: green;">Usuario registrado exitosamente</i>';

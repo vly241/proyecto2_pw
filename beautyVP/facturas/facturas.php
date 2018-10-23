@@ -1,5 +1,9 @@
 <?php
 	require '../conexion/conexion.php';
+
+
+
+
 	
 	$where = "";
 	
@@ -79,7 +83,7 @@
 								
 								
 								
-								<td><a class="btn btn-success" href="detalle_usuario.php?id=<?php  echo $row['id'];?>">detalle</a></td>
+								
 								<td><a href="editar.php?id=<?php echo $row['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
 								<td><a href="#" data-href="eliminar.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 							</tr>
@@ -118,6 +122,6 @@
 				$('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
 			});
 		</script>	
-		
+		<a href="../admin/pag_principal_admin.php" class="btn btn-default">Regresar</a>
 	</body>
 </html>	

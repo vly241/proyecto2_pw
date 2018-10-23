@@ -117,6 +117,6 @@
 				$('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
 			});
 		</script>	
-		
+		<a href="../admin/pag_principal_admin.php" class="btn btn-default">Regresar</a>
 	</body>
 </html>	

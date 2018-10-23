@@ -50,8 +50,9 @@
          
           <ul class="menu">
             <li class="menu__item"><a href="/" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="cerrar_registro.php" class="menu__link">crear Registro</a></li>
-            <li class="menu__item"><a href="pag_producto.php" class="menu__link"></a>mis pedidos</li>
+            <li class="menu__item"><a href="../facturas/factura_user.php" class="menu__link">mis pedidos</a></li>
+             <li class="menu__item"><a href="../usuarios/datos.php" class="menu__link">Modificar datos</a></li>
+           
             <li class="menu__item"><a href="../carrito_compra.php" class="menu__link"><img src="../public/img/carrito.png" alt=""></a></li>
         
             

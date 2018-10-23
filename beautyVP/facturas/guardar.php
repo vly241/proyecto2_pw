@@ -37,7 +37,7 @@
 						<h3>ERROR AL GUARDAR</h3>
 					<?php } ?>
 					
-					<a href="../admin/pag_principal_admin.php" class="btn btn-primary">Regresar</a>
+					<a href="./facturas.php" class="btn btn-primary">Regresar</a>
 					
 				</div>
 			</div>

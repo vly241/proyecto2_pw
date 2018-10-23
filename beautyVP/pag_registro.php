@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>registro</title>
     <link rel="stylesheet" type="text/css" href="public/css/login.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
     
      
     
@@ -50,6 +51,7 @@
                 <div class="password line-input">
                     <input type="password" placeholder="comprobar Contraseña" name="clave2" required>
                 </div>
+                
                 
                 
                 <?php if(!empty($error)): ?>
